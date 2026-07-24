@@ -1,6 +1,8 @@
 import "./ProductCard.css";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { FaEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 
 function ProductCard({ product , fetchProducts, setShowForm, setEditingProduct }) {
 
@@ -16,14 +18,13 @@ function ProductCard({ product , fetchProducts, setShowForm, setEditingProduct }
     }
     return (
         <div className="product-card">
-
-            <img
+            <div className="product-top">
+                <img
                 src={product.image}
                 alt={product.name}
                 className="product-image"
-            />
-
-            <div className="product-info">
+               />
+               <div className="product-info">
 
                 <h3>{product.name}</h3>
 
@@ -35,6 +36,7 @@ function ProductCard({ product , fetchProducts, setShowForm, setEditingProduct }
                     {product.category}
                 </p>
 
+                </div>
             </div>
 
             <div className="card-buttons">
@@ -43,11 +45,17 @@ function ProductCard({ product , fetchProducts, setShowForm, setEditingProduct }
                     setShowForm(true)
                     setEditingProduct(product)
                 }}>
+                    <>
+                    <FaEdit/>
                     Edit
+                    </>
                 </button>
 
                 <button className="delete-btn" onClick={handleDelete}>
+                    <>
+                    <MdDelete/>
                     Delete
+                    </>
                 </button>
 
             </div>
