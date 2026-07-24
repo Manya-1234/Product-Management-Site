@@ -31,3 +31,22 @@
     width: 85%;
     margin: 24px auto;
 }
+@media (max-width:768px){
+
+    .mainbox{
+        flex-direction:column;
+        align-items:stretch;
+        gap:20px;
+        margin:20px;
+    }
+
+    .add-product-btn{
+        width:100%;
+    }
+
+    .products-section{
+        width:95%;
+        margin:auto;
+    }
+
+}

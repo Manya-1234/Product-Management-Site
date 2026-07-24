@@ -85,3 +85,21 @@
 .delete-btn:hover{
     background:#bb2d3b;
 }
+
+@media (max-width:768px){
+
+    .product-card{
+        width:100%;
+        max-width:320px;
+        margin:auto;
+    }
+
+    .product-info h3{
+        font-size:20px;
+    }
+
+    .price{
+        font-size:20px;
+    }
+
+}
