@@ -1,0 +1,33 @@
+.mainbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 30px 40px;
+}
+
+.add-product-btn{
+    background: #22C55E;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 22px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-product-btn:hover{
+    background: #16A34A;
+}
+
+.products-section{
+    width: 85%;
+    margin: 24px auto;
+}

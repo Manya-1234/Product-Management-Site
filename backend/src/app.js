@@ -11,6 +11,6 @@ app.use(express.json({limit: "16kb"}))
 app.use(express.static("public"))
 
 import {router as productRouter} from "./routes/product.routes.js"
-app.use("/api/product",productRouter)
+app.use("/api/products",productRouter)
 
 export {app}
