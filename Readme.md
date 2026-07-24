@@ -3,6 +3,10 @@
 A full-stack **Product Management System** built using **React.js, Node.js, Express.js, and MongoDB**. The application allows users to perform complete CRUD operations on products, upload images, search products by name, and filter them by category through a clean and user-friendly interface.
 
 ---
+## Live Demo
+
+- **Frontend:** https://product-management-site-gold.vercel.app
+- **Backend API:** https://product-management-site.onrender.com
 
 ## Features
 
